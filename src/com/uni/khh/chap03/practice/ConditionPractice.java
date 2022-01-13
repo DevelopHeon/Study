@@ -17,6 +17,7 @@ public class ConditionPractice {
 			System.out.println("9. 종료 : ");
 			System.out.print("메뉴 번호를 입력하세요. ");
 			int menu = sc.nextInt();
+			
 			switch (menu) {
 			case 1:
 				System.out.println("입력 메뉴입니다.");
@@ -284,10 +285,6 @@ public class ConditionPractice {
 		default:
 			System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
 			return;
-			
 		}
-		
 	}
-	
-	
 }
