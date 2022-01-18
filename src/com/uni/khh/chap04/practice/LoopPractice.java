@@ -478,9 +478,9 @@ public class LoopPractice {
 		for (int i = 1; i <= num; i++) {
 			for (int j = 1; j <= num; j++) { // 간단하게 if문 걸어주면 될거같은데
 
-				if (i == 1 || i == 5) { // 1번째줄 마지막줄 완성
+				if (i == 1 || i == num) { // 1번째줄 마지막줄 완성
 					System.out.print("*");
-				} else if (j == 1 || j == 5) { // j가 1이거나 5일때만 별을 찍는다
+				} else if (j == 1 || j == num) { // j가 1이거나 5일때만 별을 찍는다
 					System.out.print("*");
 				} else { // 그 이외에는 공백처리 성공 금방했다 ~
 					System.out.print(" ");
@@ -538,5 +538,24 @@ public class LoopPractice {
 			}
 		System.out.println();
 		}
+	}
+	
+	public void teacher_1() {
+		
+		for(int i=-4; i<=4; i++) {		 // -4 ~ 4까지 반복 (9번 반복)
+			
+			int k = i < 0 ? -i : i;		 // k 변수에 i의 절대값 대입
+			
+			for(int j=k; j>0; j--) {	 // 공백을 출력하는 반복문
+				System.out.print(" ");
+			}
+			
+			for(int j=1; j<=9-2*k; j++) { // 숫자를 출력하는 반복문
+				System.out.print(j);
+			}
+			
+			System.out.println();
+		}
+		
 	}
 }
