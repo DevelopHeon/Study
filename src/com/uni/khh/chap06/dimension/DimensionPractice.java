@@ -172,9 +172,9 @@ public class DimensionPractice {
 			cArr[i] = new char[num2]; // 여기서 헷갈림 이차원 배열 싫음
 		}
 		
+		char result = 'a'; // 'a'값을 먼저 담아준다.
 		
 		for(int i=0; i<cArr.length; i++) {
-			char result = 'a'; // 'a'값을 먼저 담아준다.
 			for(int j=0; j<cArr[i].length; j++) {
 				
 				cArr[i][j] = result++; // a부터 1씩 증가해서 값 담아주기
@@ -228,7 +228,8 @@ public class DimensionPractice {
 		String[][] sArr2 = new String[3][2];
 
 		int count = 0; // 1차원 배열 7번째 값부터 담아주기 위해 변수를 선언해준다.
-
+		boolean result = false;
+		
 		System.out.println("== 1분단 ==");
 		for (int i = 0; i < sArr1.length; i++) { // 2차원 배열에 복사
 			for (int j = 0; j < sArr1[i].length; j++) {
@@ -266,7 +267,7 @@ public class DimensionPractice {
 
 		for (int i = 0; i < sArr2.length; i++) {
 			for (int j = 0; j < sArr2[i].length; j++) { // 1분단에서 찾지 못할 경우 2분단에서 찾기
-				if (sArr2[i][j].equals(search)) { // 방법은 위와 동일 시간이 부족해서 코드가 너무 지저분한듯
+				if (sArr2[i][j].equals(search)) {
 					if (j == 0) {
 						System.out.println("검색하신 " + search + "학생은 2분단 " + ++i + "번째 줄 왼쪽에 있습니다.");
 					} else {
