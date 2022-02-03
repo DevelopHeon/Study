@@ -65,16 +65,19 @@ public class LibraryManager {
 		
 		Book b = bList[num]; // Book 객체 만들어서 변수에 도서를 담아주고
 		
+		
 		if(b instanceof AniBook) { // instanceof 연산자 통해서 형변환 가능한지 확인
 			if(((AniBook) b).getAccessAge() > mem.getAge()) {
 				result = 1;
+				
 			}
+			
 		}else if(b instanceof CookBook) {
 			// 전달 받은 index의 bList 객체가 실제 CookBook 객체를 참조하고 있고
 			// 해당 요리책의 쿠폰유무가 “true”일 경우
 			// 회원의 couponCount 1 증가 처리 후
 			// result를 2로 초기화  성공적으로 대여 완료, 요리학원 쿠폰이 발급됐다는 의미
-
+			
 			if(((CookBook) b).getCoupon() == true) {
 				
 				mem.setCouponCount(mem.getCouponCount()+1);

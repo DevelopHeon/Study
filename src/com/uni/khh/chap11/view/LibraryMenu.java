@@ -64,7 +64,7 @@ public class LibraryMenu {
 				return;
 			default :
 				System.out.println("잘못된 번호입니다. 다시 입력하세요.");
-//				continue;
+				continue;
 			}
 		}
 		
