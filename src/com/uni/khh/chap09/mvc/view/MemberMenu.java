@@ -10,10 +10,13 @@ public class MemberMenu {
 	private MemberController mc = new MemberController();
 	
 	private Scanner sc = new Scanner(System.in);
+
+	public MemberMenu() {}
 	
 	public void mainMenu() {
 		
 		while(true) {
+			
 			System.out.println("===== 회원 관리 메뉴 =====");
 			System.out.println("1. 신규 회원 등록");
 			System.out.println("2. 회원 정보 검색");
