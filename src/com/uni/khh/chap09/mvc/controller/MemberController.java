@@ -111,7 +111,7 @@ public class MemberController {
 					for (int j = i; j < memberCount - 1; j++) { // 살짝 이해가 안된다 ?
 						mem[j] = mem[j + 1];
 					}
-//					mem[memberCount - 1] = null;
+					mem[memberCount - 1] = null;
 				}
 
 				memberCount--;
@@ -146,7 +146,7 @@ public class MemberController {
 	public Member[] sortIdDesc() {
 
 		Member[] copy = mem.clone();
-
+		
 		for (int i = 0; i < memberCount; i++) {
 			for (int j = 0; j < i; j++) {
 
