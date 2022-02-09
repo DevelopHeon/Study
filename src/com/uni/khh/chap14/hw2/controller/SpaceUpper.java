@@ -37,6 +37,7 @@ public class SpaceUpper {
 			sb = new StringBuilder(String.valueOf(ch));
 			sb.append(str);
 			sb.delete(1, 2);
+			
 			System.out.print(sb + " ");
 		}
 	}
