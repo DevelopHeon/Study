@@ -15,10 +15,10 @@ import com.uni.khh.chap15.hw2.model.vo.Book;
 
 
 public class BookManager {
+	
 	Scanner sc = new Scanner(System.in);
 
-	public BookManager() {
-	}
+	public BookManager() {}
 
 	public void fileSave() {
 		Book[] bk = new Book[5];
@@ -41,17 +41,20 @@ public class BookManager {
 	}
 
 	public Calendar setCalendar(int year, int month, int date) {
-		Calendar pDate = Calendar.getInstance();
-		pDate.set(year, month-1, date);
+		Calendar cal = Calendar.getInstance();
+		cal.set(year, month-1, date);
 		
-		return pDate;
+		return cal;
 	}
 
 	public void fileRead() {
 
+		Book[] readBook = new Book[10];
+		
 		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("books.dat"))) {
 
 			while (true) {
+				
 				System.out.println((Book) ois.readObject());
 			}
 
