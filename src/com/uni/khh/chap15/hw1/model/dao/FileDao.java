@@ -129,9 +129,9 @@ public class FileDao {
 			}
 			// “파일에 추가할 내용을 입력하시오 : “
 			// 사용자가 “exit”을 입력하기 전까지 내용을 StringBuilder에 담기
+			System.out.print("파일에 추가할 내용을 입력하세요(\"exit\" 입력하면 종료) : ");
 
 			while (true) {
-				System.out.print("파일에 추가할 내용을 입력하세요(\"exit\" 입력하면 종료) : ");
 				String result = sc.nextLine();
 
 				if (result.equals("exit")) {

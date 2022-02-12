@@ -5,10 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Book implements Serializable{
+
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7501939958268415124L;
+	private static final long serialVersionUID = 5083507785582820694L;
 	
 	private String title;			// 도서명
 	private String author;			// 저자
@@ -62,7 +64,7 @@ public class Book implements Serializable{
 	@Override
 	public String toString() {
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy년 MM월 dd일 출간 ");
-		String str=sdf.format(dates.getTime());
+		String str = sdf.format(dates.getTime());
 		return title+" "+author+" "+price+" "+str+discountRate;
 	}
 }
