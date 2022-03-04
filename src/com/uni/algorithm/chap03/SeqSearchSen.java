@@ -1,7 +1,8 @@
 package com.uni.algorithm.chap03;
 
 import java.util.Scanner;
-
+// 선형 검색 알고리즘에 보초를 추가한 알고리즘 : 종료 조건 1개를 없애므로 비용을 줄일 수가 있다.
+// 보초 : 검색 전에 검색하고자 하는 키 값을 맨 끝 요소에 저장한다. 이 저장하는 값을 보초라고 함
 public class SeqSearchSen {
 	// 요솟수가 n인 배열 a에서 key와 같은 요소를 보초법으로 선형 검색합니다.
 	static int seqSearch(int[] a, int n, int key) {

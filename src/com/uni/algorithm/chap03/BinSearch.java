@@ -1,7 +1,8 @@
 package com.uni.algorithm.chap03;
 
 import java.util.Scanner;
-
+// 이진 검색 알고리즘 : 오름차순 처럼 정렬이 되어 있을때만 사용이 가능한 알고리즘 , 절반씩 줄여나가면서 검색하기 때문에
+// 속도가 빠름
 public class BinSearch {
 
 	//요솟수가 n인 배열 a에서 key와 같은 요소를 이진 검색합니다.
